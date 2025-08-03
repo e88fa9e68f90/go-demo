@@ -1,5 +1,8 @@
 # github.com/BurntSushi/toml v1.4.0
 ## explicit; go 1.18
+# github.com/btnguyen2k/olaf v0.0.0-20190410085919-10203e4f6c6b
+## explicit
+github.com/btnguyen2k/olaf
 # github.com/bwmarrin/snowflake v0.3.0
 ## explicit
 github.com/bwmarrin/snowflake
@@ -51,6 +54,9 @@ github.com/cloudwego/base64x/internal/native
 github.com/cloudwego/base64x/internal/native/avx2
 github.com/cloudwego/base64x/internal/native/sse
 github.com/cloudwego/base64x/internal/rt
+# github.com/edwingeng/wuid v1.0.0
+## explicit; go 1.18
+github.com/edwingeng/wuid
 # github.com/gabriel-vasile/mimetype v1.4.8
 ## explicit; go 1.20
 github.com/gabriel-vasile/mimetype
@@ -93,6 +99,9 @@ github.com/goccy/go-json/internal/runtime
 # github.com/google/uuid v1.6.0
 ## explicit
 github.com/google/uuid
+# github.com/jakehl/goid v1.1.0
+## explicit
+github.com/jakehl/goid
 # github.com/json-iterator/go v1.1.12
 ## explicit; go 1.12
 github.com/json-iterator/go

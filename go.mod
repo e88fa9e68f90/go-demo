@@ -5,9 +5,12 @@ go 1.23.0
 toolchain go1.24.5
 
 require (
+	github.com/btnguyen2k/olaf v0.0.0-20190410085919-10203e4f6c6b
 	github.com/bwmarrin/snowflake v0.3.0
+	github.com/edwingeng/wuid v1.0.0
 	github.com/gin-gonic/gin v1.10.0
 	github.com/google/uuid v1.6.0
+	github.com/jakehl/goid v1.1.0
 	github.com/natefinch/lumberjack v2.0.0+incompatible
 	go.uber.org/zap v1.27.0
 )

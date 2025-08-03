@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"
-	"github.com/natefinch/lumberjack"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 	"os"
@@ -53,20 +52,20 @@ func InitLogger() {
 	}
 
 	// 日志文件配置
-	writeSyncer := zapcore.AddSync(&lumberjack.Logger{
-		Filename:   "./logs/app.log",
-		MaxSize:    100, // MB
-		MaxBackups: 3,
-		MaxAge:     7, // days
-		Compress:   true,
-	})
+	//writeSyncer := zapcore.AddSync(&lumberjack.Logger{
+	//	Filename:   "./logs/app.log",
+	//	MaxSize:    100, // MB
+	//	MaxBackups: 3,
+	//	MaxAge:     7, // days
+	//	Compress:   true,
+	//})
 
 	// 控制台输出
 	consoleDebugging := zapcore.Lock(zapcore.AddSync(zapcore.AddSync(zapcore.Lock(os.Stdout))))
 
 	// 创建core
 	core := zapcore.NewTee(
-		zapcore.NewCore(zapcore.NewJSONEncoder(encoderConfig), writeSyncer, zapcore.DebugLevel),
+		//zapcore.NewCore(zapcore.NewJSONEncoder(encoderConfig), writeSyncer, zapcore.DebugLevel),
 		zapcore.NewCore(zapcore.NewJSONEncoder(encoderConfig), consoleDebugging, zapcore.DebugLevel),
 	)
 
